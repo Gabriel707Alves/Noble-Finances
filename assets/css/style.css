@@ -46,10 +46,12 @@
     --Paragraph: normal 400 16px/110% "Work Sans", sans-serif;
 
     /* Label 1 */
-    --Label-1: normal 400 12px/110% "Work Sans", sans-serif;
+    --Label-1: normal 500 12px/110% "Work Sans", sans-serif;
 
     /* Label 2 */
     --Label-2: normal 400 15px/100% "Work Sans", sans-serif;
+
+    --Brand-Title: normal 600 18px/110% "Work Sans", sans-serif;
 
 
     /* =========================
@@ -84,4 +86,68 @@
 
     --divider-1: #2E4F21;
     --divider-2: #C7C7C7;
+}
+
+
+/* HEADER */
+header{
+    max-width: 1300px;
+    margin: auto;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 16px;
+
+
+    }
+}
+
+/* logo */
+.logo{
+    a{
+        font: var(--Brand-Title);
+        word-spacing: -4px;
+        color: var(--paragrafo);
+        
+    }
+}
+
+
+/* Links de navegação do header */
+.nav-links{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    /* Link de serviços */
+    a{
+        font: var(--Label-1);
+        color: var(--paragrafo);
+    }
+
+    /* Botão de agendamentos */
+    .botao-agendar{
+        display: block;
+        padding: 12px;
+        background-color: var(--paragrafo);
+        color: var(--on-accent-1);
+        border-radius: 51.57px;
+        transition: 0.6s ease;
+
+        &:hover{
+            background-color: var(--background-4);
+            color: var(--paragrafo);
+             transform: translateY(-2px);
+        }
+    }
+}
+
+.fundo-verde{
+    background-color: var(--background-1);
+    z-index: -1;
 }
