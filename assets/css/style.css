@@ -1,0 +1,87 @@
+/* RESET CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    /* =========================
+       DISPLAY
+    ========================= */
+    
+    /* Display */
+    --Display: normal 300 192.93px/105% "Work Sans", sans-serif;
+
+
+    /* =========================
+       HEADINGS
+    ========================= */
+
+    /* Heading 1 */
+    --Heading-1: normal 300 80px/100% "Work Sans", sans-serif;
+
+    /* Heading 2 */
+    --Heading-2: normal 300 60px/105% "Work Sans", sans-serif;
+
+    /* Heading 3 */
+    --Heading-3: normal 300 40px/105% "Work Sans", sans-serif;
+
+    /* Heading 4 */
+    --Heading-4: normal 300 30px/105% "Work Sans", sans-serif;
+
+    /* Heading 5 */
+    --Heading-5: normal 300 18px/105% "Work Sans", sans-serif;
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    /* Quote */
+    --Quote: normal 300 30px/110% "Work Sans", sans-serif;
+
+    /* Paragraph */
+    --Paragraph: normal 400 16px/110% "Work Sans", sans-serif;
+
+    /* Label 1 */
+    --Label-1: normal 400 12px/110% "Work Sans", sans-serif;
+
+    /* Label 2 */
+    --Label-2: normal 400 15px/100% "Work Sans", sans-serif;
+
+
+    /* =========================
+       CORES BACKGROUND
+    ========================= */
+
+    --background-1: #A0F1BD;
+    --background-2: #F9F9F9;
+    --background-3: #2E4F21;
+    --background-4: #FFFFFF;
+    --background-5: #F4F7F5;
+    --background-6: #D2F8DC;
+
+
+    /* =========================
+       CORES DESTAQUE 
+    ========================= */
+
+    --accent-1: #D2F8DC;
+    --accent-2: #D7D7D7;
+
+    --paragrafo: #2E4F21;
+    --on-accent-1: #FFFFFF;
+    --on-accent-2: #506349;
+    --on-accent-3: #7D9276;
+    --on-accent-4: #D5E4D0;
+
+
+    /* =========================
+       CORES DIVISÓRIAS
+    ========================= */
+
+    --divider-1: #2E4F21;
+    --divider-2: #C7C7C7;
+}
