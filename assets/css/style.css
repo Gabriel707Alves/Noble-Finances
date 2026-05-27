@@ -1,5 +1,5 @@
 /* RESET CSS */
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     /* =========================
        DISPLAY
     ========================= */
-    
+
     /* Display */
     --Display: normal 300 192.93px/105% "Work Sans", sans-serif;
 
@@ -86,15 +86,58 @@
 
     --divider-1: #2E4F21;
     --divider-2: #C7C7C7;
+
+
+    /* =========================
+       SPACING - MOBILE
+    ========================= */
+
+    --padding-mobile-inline: 16px;
+    --padding-mobile-section-y: 40px;
+    --spacing-hero-text: 40px;
+    --padding-hero-cta: 12px;
+
+
+    /* =========================
+       SPACING - TABLET
+    ========================= */
+
+    --padding-tablet-inline: 24px;
+    --padding-tablet-section-y: 100px;
+
+
+    /* =========================
+       SPACING - DESKTOP
+    ========================= */
+
+    --padding-desktop-inline: 24px;
+    --padding-desktop-section-y: 100px;
+
+
+    /* =========================
+       GAP - HERO
+    ========================= */
+
+    --hero-gap-mobile: 40px;
+    --hero-text-gap-mobile: 16px;
+    --hero-gap-tablet: 32px;
+    --hero-gap-desktop: 32px;
+
+
+    /* =========================
+       GAP - HERO
+    ========================= */
+
+    --border-radius-hero-cta: 51px;
 }
 
 
 /* HEADER */
-header{
+header {
     max-width: 1300px;
     margin: auto;
 
-    nav{
+    nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -107,31 +150,31 @@ header{
 }
 
 /* logo */
-.logo{
-    a{
+.logo {
+    a {
         font: var(--Brand-Title);
         word-spacing: -4px;
         color: var(--paragrafo);
-        
+
     }
 }
 
 
 /* Links de navegação do header */
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
 
     /* Link de serviços */
-    a{
+    a {
         font: var(--Label-1);
         color: var(--paragrafo);
     }
 
     /* Botão de agendamentos */
-    .botao-agendar{
+    .botao-agendar {
         display: block;
         padding: 12px;
         background-color: var(--paragrafo);
@@ -139,15 +182,76 @@ header{
         border-radius: 51.57px;
         transition: 0.6s ease;
 
-        &:hover{
+        &:hover {
             background-color: var(--background-4);
             color: var(--paragrafo);
-             transform: translateY(-2px);
+            transform: translateY(-2px);
         }
     }
 }
 
-.fundo-verde{
+.fundo-verde {
     background-color: var(--background-1);
     z-index: -1;
+}
+
+
+
+/* Hero Section */
+.hero {
+    max-width: 1300px;
+    margin: auto;
+    padding: var(--padding-mobile-section-y) var(--padding-mobile-inline);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hero-gap-mobile);
+
+    .img-hero{
+        width: 343px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--hero-text-gap-mobile);
+
+    h1{
+        font-weight: 500;
+        font-family: "Work sans", sans-serif;
+        letter-spacing: -8%;
+        color: var(--paragrafo);
+        word-spacing: -5%;
+    }
+
+    p{
+        font: var(--Paragraph);
+        color: var(--paragrafo);
+        margin-bottom: var(--spacing-hero-text);
+    }
+}
+
+.hero-text-container{
+    a{
+        background-color: var(--paragrafo);
+        color: var(--on-accent-1);
+        font: var(--Label-1);
+        padding: var(--padding-hero-cta);
+        border-radius: var(--border-radius-hero-cta);
+        transition: 0.6s ease;
+        display: inline-block;
+    }
+
+    a:hover{
+        color: var(--paragrafo);
+        transform: translateY(-2px);
+        background-color: var(--background-4);
+    }
 }
