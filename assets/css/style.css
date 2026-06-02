@@ -30,19 +30,19 @@
     --Heading-2-desktop: normal 300 60px/105% "Work Sans", sans-serif;
 
     /* Heading 3 */
-    --Heading-3-mobile: normal 300 28px/105% "Work Sans", sans-serif;
-    --Heading-3-tablet: normal 300 34px/105% "Work Sans", sans-serif;
-    --Heading-3-desktop: normal 300 40px/105% "Work Sans", sans-serif;
+    --Heading-3-mobile: normal 400 28px/105% "Work Sans", sans-serif;
+    --Heading-3-tablet: normal 400 34px/105% "Work Sans", sans-serif;
+    --Heading-3-desktop: normal 400 40px/105% "Work Sans", sans-serif;
 
     /* Heading 4 */
-    --Heading-4-mobile: normal 300 22px/105% "Work Sans", sans-serif;
-    --Heading-4-tablet: normal 300 26px/105% "Work Sans", sans-serif;
-    --Heading-4-desktop: normal 300 30px/105% "Work Sans", sans-serif;
+    --Heading-4-mobile: normal 400 22px/105% "Work Sans", sans-serif;
+    --Heading-4-tablet: normal 400 26px/105% "Work Sans", sans-serif;
+    --Heading-4-desktop: normal 400 30px/105% "Work Sans", sans-serif;
 
     /* Heading 5 */
-    --Heading-5-mobile: normal 300 18px/105% "Work Sans", sans-serif;
-    --Heading-5-tablet: normal 300 18px/105% "Work Sans", sans-serif;
-    --Heading-5-desktop: normal 300 18px/105% "Work Sans", sans-serif;
+    --Heading-5-mobile: normal 400 18px/105% "Work Sans", sans-serif;
+    --Heading-5-tablet: normal 400 18px/105% "Work Sans", sans-serif;
+    --Heading-5-desktop: normal 400 18px/105% "Work Sans", sans-serif;
 
 
     /* =========================
@@ -137,9 +137,10 @@
 
 
     /* =========================
-       border radius - HERO
+       border radius - mobile
     ========================= */
-
+    --radius-8: 8px;
+    --radius-20: 20px;
     --border-radius-hero-cta: 51px;
 
 
@@ -289,15 +290,18 @@ header {
 
 /* Sessão de Serviços */
 
+/* Intro section */
 .servicos {
     max-width: 1300px;
     margin: auto;
-    text-align: center;
+    
 
     padding: var(--padding-mobile-inline);
 }
 
-
+.intro-section{
+    text-align: center;
+}
 
 .content-servicos{
     padding: var(--spacing-1200) var(--spacing-0);
@@ -332,6 +336,64 @@ header {
     a:hover{
         background-color: var(--background-1);
         color: var(--paragrafo);
+        transform: translateY(-2px);
     }
 }
 
+/* Cards de serviços */
+.container-servicos{
+    padding: var(--padding-mobile-inline);
+}
+
+.card{
+    max-width: 752px;
+    background-color: var(--accent-1);
+    margin-bottom: var(--spacing-400);
+    padding: var(--spacing-400);
+    border-radius: var(--radius-20);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+
+    img{
+        width: 100%;
+    }
+}
+
+.card-text{
+    h3{
+        font: var(--Heading-3-mobile);
+        color: var(--paragrafo);
+    }
+
+    p{
+        color: var(--paragrafo);
+        font: var(--Paragraph);
+        margin: var(--spacing-500) var(--spacing-0) var(--spacing-900) var(--spacing-0);
+    }
+}
+
+.card-labels{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    margin-bottom: var(--spacing-700);
+}
+
+.label{
+    color: var(--on-accent-2);
+    border-radius: var(--radius-8);
+    text-align: center;
+    background-color: var(--background-4);
+    padding: var(--spacing-300);
+    font: var(--Label-1);
+    transition: 0.6s ease;
+    cursor: default;
+
+    &:hover{
+        background-color: var(--background-1);
+        transform: translateY(-2px);
+    }
+}
