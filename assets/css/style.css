@@ -255,7 +255,7 @@ header {
     gap: var(--hero-text-gap-mobile);
 
     h1 {
-        
+
         font: var(--Heading-1-mobile);
         letter-spacing: -8%;
         color: var(--paragrafo);
@@ -294,16 +294,16 @@ header {
 .servicos {
     max-width: 1300px;
     margin: auto;
-    
+
 
     padding: var(--padding-mobile-inline);
 }
 
-.intro-section{
+.intro-section {
     text-align: center;
 }
 
-.content-servicos{
+.content-servicos {
     padding: var(--spacing-1200) var(--spacing-0);
 
     h2 {
@@ -311,19 +311,19 @@ header {
         color: var(--paragrafo);
     }
 
-    p:first-of-type{
+    p:first-of-type {
         font: var(--Heading-2-mobile);
         color: var(--paragrafo);
         margin: var(--spacing-500) var(--spacing-0);
     }
 
-    p:nth-of-type(2){
+    p:nth-of-type(2) {
         margin-bottom: var(--spacing-500);
         font: var(--Paragraph);
         color: var(--paragrafo);
     }
 
-    a{
+    a {
         padding: var(--spacing-300);
         transition: 0.6s ease;
         display: inline-block;
@@ -333,7 +333,7 @@ header {
         font: var(--Label-1);
     }
 
-    a:hover{
+    a:hover {
         background-color: var(--background-1);
         color: var(--paragrafo);
         transform: translateY(-2px);
@@ -341,11 +341,11 @@ header {
 }
 
 /* Cards de serviços */
-.container-servicos{
+.container-servicos {
     padding: var(--padding-mobile-inline);
 }
 
-.card{
+.card {
     max-width: 752px;
     background-color: var(--accent-1);
     margin-bottom: var(--spacing-400);
@@ -356,33 +356,33 @@ header {
     margin-right: auto;
     flex-direction: column;
 
-    img{
+    img {
         width: 100%;
     }
 }
 
-.card-text{
-    h3{
+.card-text {
+    h3 {
         font: var(--Heading-3-mobile);
         color: var(--paragrafo);
     }
 
-    p{
+    p {
         color: var(--paragrafo);
         font: var(--Paragraph);
         margin: var(--spacing-500) var(--spacing-0) var(--spacing-900) var(--spacing-0);
     }
 }
 
-.card-labels{
+.card-labels {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
+
     margin-bottom: var(--spacing-700);
 }
 
-.label{
+.label {
     color: var(--on-accent-2);
     border-radius: var(--radius-8);
     text-align: center;
@@ -392,8 +392,115 @@ header {
     transition: 0.6s ease;
     cursor: default;
 
-    &:hover{
+    &:hover {
         background-color: var(--background-1);
         transform: translateY(-2px);
+    }
+}
+
+/* Sessão de Depoimentos */
+
+.testimonials-section {
+    background-color: var(--background-2);
+    max-width: 1300px;
+    margin: auto;
+    padding: var(--spacing-600);
+
+    h2 {
+        color: var(--paragrafo);
+        font: var(--Heading-2-mobile);
+        text-align: center;
+    }
+
+
+}
+
+.fundo {
+    background-color: #FFFFFF;
+    padding: 24px 16px;
+}
+
+.testimonial-display {
+
+    footer {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-500);
+        margin-bottom: var(--spacing-1000);
+
+        img {
+            max-width: 48px;
+            height: 48px;
+            border-radius: var(--spacing-400);
+        }
+
+        cite{
+            color: var(--paragrafo);
+            font: var(--Paragraph);
+        }
+    }
+}
+
+/* Textos do botão */
+.text-button {
+    font: var(--Label-1);
+    border-top: 1px solid var(--on-accent-3);
+    text-align: left;
+
+    p{
+        color: var(--on-accent-3);
+    }
+
+    p:first-of-type {
+        margin: var(--spacing-200) var(--spacing-0);
+        color: var(--paragrafo);
+    }
+}
+
+.testimonial-trigger {
+    padding: 16px 12px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 90px;
+    max-height: 113px;
+    border: none;
+    background: none;
+    border-radius: 8px;
+}
+
+.testimonial-selector {
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-700);
+    margin-bottom: var(--spacing-700);
+
+}
+
+.active {
+    font: var(--Label-1);
+    background-color: var(--background-3);
+
+    .text-button {
+
+        p:first-of-type {
+            color: var(--background-4);
+        }
+
+       
+    }
+
+}
+
+.testimonial-text{
+    font: var(--Quote-mobile);
+    color: var(--paragrafo);
+    margin-bottom: var(--spacing-800);
+
+}
+
+.testimonial-image{
+    img{
+        max-width: 100%;
     }
 }
