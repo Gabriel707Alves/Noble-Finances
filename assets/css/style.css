@@ -11,7 +11,7 @@
     --radius-sm: 10px;
     --radius-md: 22px;
     --radius-lg: 36px;
-    --container: 1240px;
+    --container: 1350px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -53,7 +53,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-copy { max-width: 720px; }
 .hero h1 { max-width: 760px; margin: 0; font-size: clamp(2.6rem, 12vw, 5rem); font-weight: 300; letter-spacing: -.075em; line-height: .95; }
 .hero-copy p { max-width: 590px; margin: 28px 0 34px; font-size: clamp(1rem, 2vw, 1.15rem); }
-.hero-visual { width: min(100%, 500px); margin-inline: auto; animation: float 5s ease-in-out infinite; }
+.hero-visual { width: min(100%, 620px); margin-inline: auto; animation: float 5s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-10px); } }
 
 .section-intro { max-width: 780px; margin: 0 auto 64px; text-align: center; }
@@ -109,7 +109,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
     .section { padding-block: 110px; }
     .menu-button { display: none; }
     .nav-links { position: static; visibility: visible; flex-direction: row; gap: 28px; background: transparent; font-size: .9rem; opacity: 1; transform: none; }
-    .hero { grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); }
+    .hero { grid-template-columns: minmax(0, 1fr) minmax(340px, 1fr); }
     .hero-visual { order: 2; }
     .service-card { grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr); }
     .service-card--reverse .service-card__image { order: 2; }
